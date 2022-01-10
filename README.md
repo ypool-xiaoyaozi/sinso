@@ -7,8 +7,8 @@
 
 1.  安装sinso的客户端
     wget https://github.com/sinsoio/mine_publish/archive/refs/tags/v1.0.2.tar.gz
-    tar -xvf v1.0.2.tar.gz
-    cd mine_publish-1.0.2/ && chmod 755 sinso && sudo cp sinso /usr/local/bin
+    &&    tar -xvf v1.0.2.tar.gz
+    &&    cd mine_publish-1.0.2/ && chmod 755 sinso && sudo cp sinso /usr/local/bin
 2.  mkdir /data 目录
 3.  执行脚本 ./sin.sh
 4.  输入相应的数字不能写重复的数字，如果需要写重复的数字删除/data 下面对应的目录
