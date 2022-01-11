@@ -18,5 +18,5 @@ sed -i "/^debug-api-addr/{s/$/$number/}" /data/sinso$number/sinso$number.yaml
 sed -i "/^p2p-addr/{s/$/$number/}" /data/sinso$number/sinso$number.yaml
 sed -i "/^tracing-endpoint/{s/$/$number/}" /data/sinso$number/sinso$number.yaml
 sed -i "s/sinso/sinso$number/g" /data/sinso$number/sinso$number.yaml 
-sinso start --config /data/sinso$number/sinso$number.yaml >$HOME/sinso/sin$unmer.log 2>&1 &
+sindo start --config /data/sinso$number/sinso$number.yaml
 exit
