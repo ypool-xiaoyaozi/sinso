@@ -11,13 +11,12 @@ else
 	fi
 fi
 cd /data/ && mkdir sinso$number
-cd $HOME
+cd $HOME/sinso
 cp sinso.yml /data/sinso$number/sinso$number.yaml
 sed -i "/^api-addr/{s/$/$number/}" /data/sinso$number/sinso$number.yaml
 sed -i "/^debug-api-addr/{s/$/$number/}" /data/sinso$number/sinso$number.yaml
 sed -i "/^p2p-addr/{s/$/$number/}" /data/sinso$number/sinso$number.yaml
 sed -i "/^tracing-endpoint/{s/$/$number/}" /data/sinso$number/sinso$number.yaml
 sed -i "s/sinso/sinso$number/g" /data/sinso$number/sinso$number.yaml 
-sinso start --config /data/sinso$number/sinso$number.yaml
-sinso start --config /data/sinso$number/sinso$number.yaml >/home/cat/sinso/sin$unmer.log 2>&1 &
+sinso start --config /data/sinso$number/sinso$number.yaml >$HOME/sinso/sin$unmer.log 2>&1 &
 exit
