@@ -12,7 +12,7 @@ else
 fi
 cd /data/ && mkdir sinso$number
 cd $HOME
-cp /sinso/sinso.yml /data/sinso$number/sinso$number.yaml
+cp sinso.yml /data/sinso$number/sinso$number.yaml
 sed -i "/^api-addr/{s/$/$number/}" /data/sinso$number/sinso$number.yaml
 sed -i "/^debug-api-addr/{s/$/$number/}" /data/sinso$number/sinso$number.yaml
 sed -i "/^p2p-addr/{s/$/$number/}" /data/sinso$number/sinso$number.yaml
