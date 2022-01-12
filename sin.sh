@@ -10,13 +10,12 @@ else
 		exit
 	fi
 fi
-cd /data/ && mkdir sinso$number
-cd $HOME/sinso
+mkdir /data/sinso$number
 cp sinso.yml /data/sinso$number/sinso$number.yaml
 sed -i "/^api-addr/{s/$/$number/}" /data/sinso$number/sinso$number.yaml
 sed -i "/^debug-api-addr/{s/$/$number/}" /data/sinso$number/sinso$number.yaml
 sed -i "/^p2p-addr/{s/$/$number/}" /data/sinso$number/sinso$number.yaml
 sed -i "/^tracing-endpoint/{s/$/$number/}" /data/sinso$number/sinso$number.yaml
 sed -i "s/sinso/sinso$number/g" /data/sinso$number/sinso$number.yaml 
-sudo sindo start --config /data/sinso$number/sinso$number.yaml
+sudo ./sindo start --config /data/sinso$number/sinso$number.yaml
 exit
