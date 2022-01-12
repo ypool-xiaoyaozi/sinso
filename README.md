@@ -9,6 +9,7 @@
     wget https://github.com/sinsoio/mine_publish/archive/refs/tags/v1.0.2.tar.gz
     &&    tar -xvf v1.0.2.tar.gz
     &&    cd mine_publish-1.0.2/ && chmod 755 sinso && sudo cp sinso /usr/local/bin
+    &&    sudo cp sinso $HOME/sinso
 2.  mkdir /data 
 3.  git clone https://gitee.com/xiaoyaozi123/sinso.git
 4.  cd sinso && sudo chmod +x sin.sh
