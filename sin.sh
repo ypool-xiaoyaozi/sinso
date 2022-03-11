@@ -10,10 +10,10 @@ else
 		exit
 	fi
 fi
-
+[ -d "/data/sinso$number" ] && echo "文件存在" || mkdir /data/sinso$number
 if [ -n "`echo $number|sed 's/[0-9]//g'`" ]
 then
-mkdir /data/sinso$number
+# mkdir /data/sinso$number 
 cp sinso.yml /data/sinso$number/sinso$number.yaml
 sed -i "/^api-addr/{s/$/$number/}" /data/sinso$number/sinso$number.yaml
 sed -i "/^debug-api-addr/{s/$/$number/}" /data/sinso$number/sinso$number.yaml
