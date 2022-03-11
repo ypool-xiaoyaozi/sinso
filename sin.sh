@@ -10,6 +10,9 @@ else
 		exit
 	fi
 fi
+
+if [ -n "`echo $number|sed 's/[0-9]//g'`" ]
+then
 mkdir /data/sinso$number
 cp sinso.yml /data/sinso$number/sinso$number.yaml
 sed -i "/^api-addr/{s/$/$number/}" /data/sinso$number/sinso$number.yaml
@@ -18,4 +21,7 @@ sed -i "/^p2p-addr/{s/$/$number/}" /data/sinso$number/sinso$number.yaml
 sed -i "/^tracing-endpoint/{s/$/$number/}" /data/sinso$number/sinso$number.yaml
 sed -i "s/sinso/sinso$number/g" /data/sinso$number/sinso$number.yaml 
 sudo ./sinso start --config /data/sinso$number/sinso$number.yaml
+else
+    "你输入的不是数字退出程序"
+fi
 exit
