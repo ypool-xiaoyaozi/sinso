@@ -10,7 +10,7 @@ else
 		exit
 	fi
 fi
-[ -d "/data/sinso$number" ] && echo "文件存在" || mkdir /data/sinso$number
+[ -d "/data/sinso$number" ] && echo "目录存在" || mkdir /data/sinso$number
 if [ -n "`echo $number|sed 's/[0-9]//g'`" ]
 then
 # mkdir /data/sinso$number 
