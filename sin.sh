@@ -20,7 +20,7 @@ sed -i "/^debug-api-addr/{s/$/$number/}" /data/sinso$number/sinso$number.yaml
 sed -i "/^p2p-addr/{s/$/$number/}" /data/sinso$number/sinso$number.yaml
 sed -i "/^tracing-endpoint/{s/$/$number/}" /data/sinso$number/sinso$number.yaml
 sed -i "s/sinso/sinso$number/g" /data/sinso$number/sinso$number.yaml 
-sudo ./sinso start --config /data/sinso$number/sinso$number.yaml
+./sinso start --config /data/sinso$number/sinso$number.yaml
 else
     "你输入的不是数字退出程序"
 fi
