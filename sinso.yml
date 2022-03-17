@@ -40,7 +40,7 @@ resolver-options: []
 standalone: false
 swap-deployment-gas-price: ""
 swap-enable: true
-swap-endpoint: https://data-seed-prebsc-1-s1.binance.org:8545
+swap-endpoint: https://data-seed-pressc-3.sinso.io
 swap-factory-address: ""
 swap-initial-deposit: "0"
 tracing-enable: false
