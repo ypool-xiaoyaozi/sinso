@@ -7,10 +7,10 @@
 
 1.  安装sinso的客户端
     sudo -i
-    wget https://github.com/sinsoio/mine_publish/archive/refs/tags/v1.1.0.tar.gz
+    &&    wget https://github.com/sinsoio/mine_publish/archive/refs/tags/v1.1.0.tar.gz
     &&    tar -xf v1.1.0.tar.gz
     &&    cd mine_publish-1.1.0/ 
-    && chmod 755 sinso  
+    &&    chmod 755 sinso  
 2.  mkdir /data 
 3.  git clone https://gitee.com/xiaoyaozi123/sinso.git
 4.  cd sinso && sudo chmod +x sin.sh sin_for.sh
