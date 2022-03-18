@@ -47,7 +47,7 @@ resync: false
 static-nodes: []
 swap-deployment-gas-price: ""
 swap-enable: true
-swap-endpoint: https://data-seed-pressc-3.sinso.io
+swap-endpoint: http://127.0.0.1:8545
 swap-factory-address: ""
 swap-initial-deposit: "0"
 swap-legacy-factory-addresses: []
