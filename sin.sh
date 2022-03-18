@@ -10,6 +10,8 @@ else
                 exit
         fi
 fi
+
+[ -d "/data" ] && echo "目录存在" || mkdir /data
 [ -d "/data/sinso$number" ] && echo "目录存在" || mkdir /data/sinso$number
 
 if [ -d "/data/sinso$number" ]
